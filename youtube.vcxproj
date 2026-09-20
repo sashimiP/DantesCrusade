@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2b031f86-440e-4646-9aa2-d44cc0c45174}</ProjectGuid>
+    <RootNamespace>youtube</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Projects\raylib\youtube\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <BuildStlModules>true</BuildStlModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Projects\raylib\youtube\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;winmm.lib;avcodec.lib;avformat.lib;avutil.lib;swscale.lib;swresample.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Projects\raylib\youtube\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <BuildStlModules>true</BuildStlModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Projects\raylib\youtube\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Projects\raylib\youtube\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <BuildStlModules>true</BuildStlModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Projects\raylib\youtube\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;winmm.lib;avcodec.lib;avformat.lib;avutil.lib;swscale.lib;swresample.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Projects\raylib\youtube\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <BuildStlModules>true</BuildStlModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Projects\raylib\youtube\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AbilityIcon.cpp" />
+    <ClCompile Include="Angel.cpp" />
+    <ClCompile Include="AnimatedAsset.cpp" />
+    <ClCompile Include="AssetOptions.cpp" />
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="BattleEntity.cpp" />
+    <ClCompile Include="Battleground.cpp" />
+    <ClCompile Include="BattleHero.cpp" />
+    <ClCompile Include="BuffCard.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CampaignEntity.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="Dante.cpp" />
+    <ClCompile Include="DanteHorse.cpp" />
+    <ClCompile Include="DebuffCard.cpp" />
+    <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="Dialogue.cpp" />
+    <ClCompile Include="DialoguePlatform.cpp" />
+    <ClCompile Include="Editor.cpp" />
+    <ClCompile Include="EnemyArmyCaptain.cpp" />
+    <ClCompile Include="EnemyDeck.cpp" />
+    <ClCompile Include="FootSoldier.cpp" />
+    <ClCompile Include="GateKeeper.cpp" />
+    <ClCompile Include="HolyBeam.cpp" />
+    <ClCompile Include="include\rmedia.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MarchingEntity.cpp" />
+    <ClCompile Include="MarchingScreen.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MountedSoldier.cpp" />
+    <ClCompile Include="PatrolingEntity.cpp" />
+    <ClCompile Include="Portrait.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="RangedSoldier.cpp" />
+    <ClCompile Include="Recruiter.cpp" />
+    <ClCompile Include="SpecialEntity.cpp" />
+    <ClCompile Include="SpellCard.cpp" />
+    <ClCompile Include="SpiderQueen.cpp" />
+    <ClCompile Include="StateAlteringCard.cpp" />
+    <ClCompile Include="StrikeAndLure.cpp" />
+    <ClCompile Include="StrikeAndReturnSoldier.cpp" />
+    <ClCompile Include="TextBox.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Tiles.cpp" />
+    <ClCompile Include="Town.cpp" />
+    <ClCompile Include="TownBackground.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="SpellCaster.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbilityIcon.h" />
+    <ClInclude Include="Angel.h" />
+    <ClInclude Include="AnimatedAsset.h" />
+    <ClInclude Include="AssetOptions.h" />
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="BattleEntity.h" />
+    <ClInclude Include="Battleground.h" />
+    <ClInclude Include="BattleHero.h" />
+    <ClInclude Include="BuffCard.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="CampaignEntity.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="Dante.h" />
+    <ClInclude Include="DanteHorse.h" />
+    <ClInclude Include="DebuffCard.h" />
+    <ClInclude Include="Deck.h" />
+    <ClInclude Include="Dialogue.h" />
+    <ClInclude Include="DialoguePlatform.h" />
+    <ClInclude Include="Editor.h" />
+    <ClInclude Include="EnemyArmyCaptain.h" />
+    <ClInclude Include="EnemyDeck.h" />
+    <ClInclude Include="FootSoldier.h" />
+    <ClInclude Include="GateKeeper.h" />
+    <ClInclude Include="HolyBeam.h" />
+    <ClInclude Include="include\raymedia.h" />
+    <ClInclude Include="MarchingEntity.h" />
+    <ClInclude Include="MarchingScreen.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MountedSoldier.h" />
+    <ClInclude Include="PatrolingEntity.h" />
+    <ClInclude Include="Portrait.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="RangedSoldier.h" />
+    <ClInclude Include="Recruiter.h" />
+    <ClInclude Include="SpecialEntity.h" />
+    <ClInclude Include="SpellCard.h" />
+    <ClInclude Include="SpiderQueen.h" />
+    <ClInclude Include="StateAlteringCard.h" />
+    <ClInclude Include="StrikeAndLure.h" />
+    <ClInclude Include="StrikeAndReturnSoldier.h" />
+    <ClInclude Include="TextBox.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Tiles.h" />
+    <ClInclude Include="Town.h" />
+    <ClInclude Include="TownBackground.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="SpellCaster.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
