@@ -1,0 +1,12 @@
+0.223713
+2
+14675.4
+622
+idle_knights
+1
+idle
+Unknown
+0
+0
+0
+0

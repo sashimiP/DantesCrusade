@@ -1,0 +1,12 @@
+0.370032
+1
+13228
+551
+village_house_b
+0
+idle
+Unknown
+0
+0
+0
+0

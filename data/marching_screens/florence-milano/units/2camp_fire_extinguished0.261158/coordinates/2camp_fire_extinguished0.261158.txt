@@ -1,0 +1,12 @@
+0.261158
+2
+10942.2
+634
+camp_fire_extinguished
+0
+idle
+Unknown
+1
+0
+0
+0

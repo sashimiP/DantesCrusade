@@ -1,0 +1,12 @@
+0.644968
+2
+13818.6
+625
+lade_pregnant
+1
+idle
+Unknown
+1
+0
+0
+0

@@ -1,0 +1,12 @@
+0.230017
+1
+8056.36
+570
+falling_leaf_tree
+0
+idle
+Unknown
+0
+0
+0
+0

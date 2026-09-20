@@ -1,0 +1,12 @@
+0.0357623
+1
+16277
+529
+medieval_house_b
+1
+idle
+Unknown
+5
+0
+-75816
+0
