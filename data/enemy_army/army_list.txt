@@ -1,0 +1,16 @@
+imp
+imp
+skeleton
+skeleton
+spectre
+spectre
+green_goblin
+green_goblin
+witch
+witch
+gorgon
+gorgon
+elf_bow
+elf_sword
+elf_spear
+dark_sword

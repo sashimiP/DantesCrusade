@@ -1,0 +1,10 @@
+black_shield
+fire_ball
+golden_sword
+health_potion
+personal_squire
+shield_breaker
+sound_sleeper
+sword_thief
+thunderbolt
+violet_poison
