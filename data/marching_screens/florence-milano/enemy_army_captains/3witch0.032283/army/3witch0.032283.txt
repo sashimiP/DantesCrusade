@@ -1,0 +1,6 @@
+witch
+succubus_blue
+succubus_wizard
+succubus_whip
+succubus_red
+dark_sword
